@@ -31,8 +31,15 @@ cd stress-detection-iot-ml
 # Install dependencies
 pip install -r requirements.txt
 
-# Run dashboard
+# Generate Pickle file
+Run model_training.py to train and generate stress_model.pkl.
+
+# Start Streamlit dashboard (ensure serial device is connected)
 streamlit run app.py
+
+# (Optional) Test serial port reading
+python serial_reader.py
+
 ````
 
 
